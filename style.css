@@ -1,0 +1,22 @@
+.button_div_logs {
+    display: flex;
+    justify-content: center;
+}
+
+.button_logs {
+    text-align: center;
+    width: auto;
+    height: 30px;
+    margin: 8px;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 0.25rem;
+    border: 0;
+    background: #2fb380;
+}
+
+.text_area_logs {
+    font-family: sans-serif;
+    font-size: large;
+
+}
