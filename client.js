@@ -8,13 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     buttonOpen.onclick = function () {
 
-
         let webSocket = new WebSocket('ws://localhost:12345/')
 
         webSocket.onopen = function () {
             webSocket.send('is_open')
         }
-        alert('Open')
+        alert('Connection is open')
 
         webSocket.onmessage = function (event) {
 
@@ -33,11 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (webSocket.readyState === 1) {
                 webSocket.close(1000, "работа закончена");
-                alert('конец')
+                alert('Connection closed')
             } else {
                 alert('соединеие не было открыто')
             }
-            alert("Сlose")
         }
     }
 
